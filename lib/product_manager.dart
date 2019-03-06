@@ -18,7 +18,7 @@ class _ProductManagerState extends State<ProductManager> {
 
   @override
   void initState() { 
-    super.initState();
+    super.initState(); // It is recommended to move this to the beginning of the initState method.
     _products.add(widget.startingProduct); // There is no need to use setState in initState as it runs before build.
   }
 
