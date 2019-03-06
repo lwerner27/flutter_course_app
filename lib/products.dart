@@ -7,7 +7,7 @@ class Products extends StatelessWidget {
   final List<String> products;
 
   // Constructor Fucntion in Dart
-  Products(this.products);
+  Products({this.products = const []}); // This is a constructor with a named property and default value of and empty List.
 
   @override
   Widget build(BuildContext context) {
